@@ -1,0 +1,481 @@
+/* Variables CSS */
+
+:root {
+
+    /*--bg-section-01: #4696e5;*/
+    /*--bg-section-02: #ffffff;*/
+
+/* Paleta de colores en base al logo
+------------------------------------ */
+
+    --black1: #000;
+    --black2: #0D0D0D;
+    --black-grey: #262626;
+    --dark-grey: #595959;
+    --grey: #8C8C8C;
+    --light-grey: #D9D9D9;
+    --white: #fff;
+
+
+}
+
+/* BASE
+===================== */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    /*-webkit-box-sizing: border-box;*/
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 250;
+
+    --font-title: 'Mr Dafoe', cursive;
+    --font-subtitle: 'Hammersmith One', cursive;
+    --font-title-weight: 300;
+}
+
+
+
+/* HELPERS
+===================== */
+
+.px-08 {
+    padding: 0.8rem;
+  }
+
+.h50 {
+    height: 50rem;
+}
+
+.h5 {
+    height: 5.5rem;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.m5-left {
+    margin-left: 5rem;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.img {
+    display: block;
+    border:0;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ESTRUCTURAS/ SECCIONES */
+
+/*Nav*/
+
+.menu {
+    background-color: var(--black2);
+    height: 7.5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border-bottom: 0.1rem solid #fff;*/
+    box-shadow: 0.5rem 0 1rem rgba(0, 0, 0, .6);
+
+}
+
+.logo {
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.menu-items {
+    display: flex;
+    list-style: none;
+    margin-right: 3rem;
+}
+
+.menu-items li {
+    border-radius: 0.3rem;
+    margin: 0 0.5rem;
+}
+
+.menu-items li a {
+    padding: 0.7rem 1.3rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+    .menu-items li:hover, li:active {
+        background-color: rgba(0, 0, 0, .3);
+        transition: .4s;
+    }
+
+.btn-menu {
+    margin-right: 3rem;
+    font-size: 2.5rem;
+    color:#fff;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show {
+    top: 6.5rem;
+}
+
+
+/*Principal*/
+
+#principal {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--black2);
+    background-image: url(../img/lu-fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.principal-container {
+    padding: 5rem;
+    width: 50%;
+}
+
+    #principal h1 {
+        padding: 3.2rem;
+        font-family: var(--font-title);
+        font-weight: var(--font-title-weight);
+        letter-spacing: 1.5px;
+        font-size: 5.5rem;
+        color: var(--black2);
+    }
+
+    #principal p {
+        margin: 2 0rem;
+        padding: 3.7rem;
+        font-size: 1.5rem;
+        font-family: "Roboto", sans-serif;
+        color: var(--light-grey);
+    }
+
+    #principal button {
+        font-size: 1.5rem;
+        color: var(--light-grey);
+        text-align: center;
+        width: 15rem;
+        margin: 1rem 1rem;
+        padding: 1rem;
+        background-color: var(--black2);
+        border: 0.3rem var(--dark-grey);
+        border-radius: 2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 500ms ease-in-out;
+        cursor: pointer;
+    }
+
+    #principal button a {
+        text-decoration: none;
+        color: var(--light-grey);
+    }
+
+    #principal button:focus,
+    #principal button:hover {
+        background-color: var(--dark-grey);
+        color: var(--black2)
+    }
+
+/*cabeceras Beneficios y Clases*/
+
+    .cabecera{
+        background-color: var(--black2);
+        font-family: "Roboto", sans-serif;
+        }
+        
+        .centrado{
+            margin: 0 auto;
+            padding: 0 0.8rem;
+        }
+        
+        @media screen and (min-width: 52rem){
+            .centrado{
+                max-width: 52rem;
+            }
+        }
+
+        .title-cabecera {
+            margin: 0;
+            padding: 1.5rem 0;
+            font-size: 2rem;
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+        }
+
+/*Beneficios*/
+
+#beneficios {
+    background-color: var(--black2);
+}
+#beneficios h5 {
+    font-size: 2rem;
+}
+#beneficios p {
+    font-size: 1.5rem;
+}
+
+.carousel, .carousel-inner > .carousel-item > img {
+    height: 100vh;
+  }
+
+/*Clases*/
+
+#clases {
+    background-color: var(--light-grey);
+    /*height: 100vh;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.container-cards {
+    margin: auto;
+    width: 100%;
+    max-width: 120rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+    
+    .tarjeta {
+        margin: 2rem;
+        width: 33rem;
+        height: 45rem;
+        border-radius: 0.8rem;
+        box-shadow: rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        text-align: center;
+        transition: all 0.25s;
+        background-color: var(--white);
+
+    }
+
+    .tarjeta:hover {
+        transform: translateY(-1.5rem);
+        box-shadow: 0 1.2rem 1.6rem rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    .tarjeta a{
+        color: black;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .tarjeta a:hover{
+        box-shadow: 0.3rem 0.3rem 0.8rem hsl(0, 0%, 70%);
+    }
+    
+    .tarjeta-content{  
+        padding: 1.4rem;
+        
+    }
+    
+    .tarjeta-content h3 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+        font-weight: 300;
+        text-align: center;
+        color:var(--white);
+        background-color: var(--black2);
+    }
+    
+    .tarjeta-content p {
+        padding: 0 1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+        color: var(--black2);
+    }
+    
+
+    .img-card {
+        width: 33rem;
+        height: 22rem;
+    }
+
+
+/*Formulario*/
+
+#contacto {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacto-container {
+    padding: 2rem;
+    width: 100%;
+}
+
+.inscripcion-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mapa p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+#mapa i {
+    padding: 0.8rem;
+}
+
+#inscripcion {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 0.8rem;
+  justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 0.1rem;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 0.8rem;
+  font-weight: 600;
+  font-size: medium;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 12rem;
+  max-width: 22rem;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 22rem;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 1rem;
+  border: solid 0.01rem;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 1rem 1.8rem;
+  border: none;
+  background: var(--black2);
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 0.2rem;
+  font-size: medium;
+}
+
+.flex-inner li {
+  width: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    background-color: var(--black2);
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 1rem;
+    color: var(--light-grey);
+    font-weight: 500;
+}
+
+    footer p {
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: var(--font-subtitle);
+        text-transform: uppercase;
+    }
+
+#footer-redes a {
+    padding: 1rem;
+    color: var(--light-grey);
+    text-decoration: none;
+}
+
+
+
+
+
