@@ -12,7 +12,7 @@
         display:inline-flex;
     }
     .menu-items {
-        position: fixed;
+        position: absolute;
         width: 100vw;
         height: auto;
         /*height: calc(100% - 6.5rem);*/
