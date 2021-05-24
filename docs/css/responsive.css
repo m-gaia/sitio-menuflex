@@ -14,7 +14,8 @@
     .menu-items {
         position: fixed;
         width: 100vw;
-        height: calc(100% - 6.5rem);
+        height: auto;
+        /*height: calc(100% - 6.5rem);*/
         background: var(--black2);
         top:-100vh;
         text-align: center;
@@ -55,32 +56,12 @@
 @media screen and (max-width: 640px){
 
 
-
-    .navbar {
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-start;
-    }
-
-    .navbar>ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar img {
-        width: 8rem;
-    }
-
-    .navbar a {
-        font-size: 1rem;
-    }
-
     #redes i {
         font-size: 1rem;
     }
 
     #principal {
-        height: auto;
+        height: 80vh;
         background-position: right;
         background-repeat: no-repeat;
         background-color: var(--black2);
@@ -95,7 +76,8 @@
     }
 
     #principal h1 {
-        color: var(--light-grey);
+        /*color: var(--light-grey);*/
+        display: none;
     }
 
     #principal button {
