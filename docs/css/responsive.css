@@ -46,8 +46,9 @@
         margin: 0.5rem 0 0 0;
     }
     .menu-items {
-        overflow: scroll;
-        height: calc(100% - 6.5rem);
+        /*overflow: scroll;*/
+        /*height: calc(100% - 6.5rem);*/
+        height: 100vh;
     }
 
 }
@@ -89,9 +90,17 @@
         padding: 1rem;
     }
 
+    #beneficios h5 {
+        font-size: 1.5rem;
+    }
+
     .carousel, .carousel-inner > .carousel-item > img {
         height: auto;
       }
+
+    #clases {
+        background-color: var(--black1);
+    }
 
 
     .container-cards {
